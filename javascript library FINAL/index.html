@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>lending library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="main">
+    <h1>the library</h1>
+    <p>search for a book!</p>
+
+    <select id="type">
+      <option value="author">author</option>
+      <option value="title">title</option>
+      <option value="genre">genre</option>
+    </select>
+    
+    <input id="searchBook">
+    <button type="button" id="enter">search</button>
+    <ol id='result'></ol>
+
+    <h2 class="log">Create an Account</h2>
+    Name:<br>
+    <input id="userName"><br>
+    E-mail:<br>
+    <input id="email"><br>
+    Password:<br>
+    <input id="password"><br>
+     <button type="button" id="submit" onclick="signUp()">Submit</button>
+     <br><br>
+     <p>*check console</p>
+
+    <h2 class="review">Add a Review!</h2>
+    Name:<br>
+    <input id="name"><br>
+    Subject:<br>
+    <input id="subject"><br>
+    Review:<br>
+    <textarea id="review"></textarea><br>
+     <button type="button" id="submit" onclick="post()">Submit</button>
+
+     <h3 class="posted">Reviews</h3>
+     <div id="submission">
+      <h4 id="person"></h4>
+      <p id="title"></p>
+      <p id="posting"></p>
+     </div>
+
+
+  </main>
+  <footer>
+    <p>wmdd 4820 lending library 2016</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
